@@ -14,8 +14,7 @@
 }
 
 body {
-  background: url(https://iniminey.github.io/images/mainbg.jpg) no-repeat center fixed;
-  background-size: cover;
+  background-color: #ddd;
 }
 
 .header {
@@ -50,28 +49,25 @@ body {
   font-family: "TriplexSerifLight";
 }
 
-section {
-            margin-top: 175px;
-        }
+main {
+  top: 200px;
+}
 
-article {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            width: 400px;
-  border-style: solid;
-  border-width: 6px;
-        }
+#images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+}
 
-h2 {
-            color: rgba(0, 188, 212, 1);
-  font-family: "Eurostile";
-        }
-
-p {
-            color: black;
-  font-family: "Eurostile";
-        }
+#images img {
+	width: 250px;
+  height: 300px;
+	object-fit: cover;
+	object-position: center;
+	cursor: pointer;
+}
 
 .footer {
   background-color: white;
