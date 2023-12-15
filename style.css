@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "Eurostile";
+	src: url(fonts/Eurostile.ttf);
+}
+
+@font-face {
+	font-family: "EurostileBold";
+	src: url(fonts/EurostileBold.ttf);
+}
+
+@font-face {
+	font-family: "TriplexSerifLight";
+	src: url(fonts/TriplexSerifLight.otf);
+}
+
+body {
+  background: url(https://iniminey.github.io/images/mainbg.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.header {
+  background-color: white;
+  height: 125px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.headertext {
+  position: absolute;
+  font-size: 80px;
+  top: 17px;
+  left: 30px;
+  font-family: "EurostileBold";
+  text-transform: uppercase;
+}
+
+.headertext span {
+  color: salmon;
+  }
+
+.pages {
+  position: absolute;
+  column-count: 5;
+  column-gap: 40px;
+  font-size: 15px;
+  top: 40px;
+  left: 425px;
+  font-family: "TriplexSerifLight";
+}
+
+section {
+            margin-top: 175px;
+        }
+
+article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 400px;
+  border-style: solid;
+  border-width: 6px;
+        }
+
+h2 {
+            color: rgba(0, 188, 212, 1);
+  font-family: "Eurostile";
+        }
+
+p {
+            color: black;
+  font-family: "Eurostile";
+        }
+
+.footer {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footertext {
+  position: absolute;
+  font-size: 15px;
+  bottom: 25px;
+  right: 30px;
+  font-family: "Eurostile";
+}
