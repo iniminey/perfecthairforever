@@ -13,12 +13,22 @@
 	src: url(fonts/TriplexSerifLight.otf);
 }
 
-body {
-  background-color: #ddd;
+*, *::before, *::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+   
 }
+   
+.pagewrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+
+  } 
 
 .header {
-  background-color: white;
+  background-color: #ddd;
   height: 125px;
   width: 100%;
   position: absolute;
@@ -36,7 +46,7 @@ body {
 }
 
 .headertext span {
-  color: salmon;
+  color: red;
   }
 
 .pages {
@@ -50,33 +60,35 @@ body {
 }
 
 main {
-  margin-top: 200px;
-  margin-bottom: 100px;
+  flex-grow: 1;
 }
 
 .images {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 200px;
+  margin-bottom: 75px;
+
 }
 
 .images img {
-	width: 250px;
-  height: 300px;
-	object-fit: cover;
-	object-position: center;
-	cursor: pointer;
+  height: 250px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  padding: 4px 4px 4px;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  height: 250px;
 }
 
 .footer {
-  background-color: white;
+  background-color: #ddd;
   height: 70px;
   width: 100%;
   position: relative;
-  bottom: 0;
-  left: 0;
 }
 
 .footertext {
