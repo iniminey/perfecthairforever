@@ -10,17 +10,6 @@ header {
  background-color: white;
 }
 
-.headertext {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 4.4vw;
-  top: 0.5vw;
-}
-
-.headertext span {
-  color: salmon;
-  }
-
 .pages {
   display: inline-block;
   vertical-align: middle;
