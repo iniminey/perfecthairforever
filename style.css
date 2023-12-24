@@ -1,100 +1,71 @@
-@font-face {
-	font-family: "Eurostile";
-	src: url(fonts/Eurostile.ttf);
+body {
+ margin: 0;
+ display: flex;
+ flex-direction: column;
 }
 
-@font-face {
-	font-family: "EurostileBold";
-	src: url(fonts/EurostileBold.ttf);
-}
-
-@font-face {
-	font-family: "TriplexSerifLight";
-	src: url(fonts/TriplexSerifLight.otf);
-}
-
-*, *::before, *::after{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box; 
-   
-}
-   
-.pagewrap{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%; 
-
-  } 
-
-.header {
-  background-color: #ddd;
-  height: 125px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+header {
+ width: 100vw;
+ height: 20vh;
+ background-color: white;
 }
 
 .headertext {
-  position: absolute;
-  font-size: 80px;
-  top: 17px;
-  left: 30px;
-  font-family: "EurostileBold";
+  position: relative;
   text-transform: uppercase;
+  font-size: 4.4vw;
+  top: 0.5vw;
 }
 
 .headertext span {
-  color: red;
+  color: salmon;
   }
 
 .pages {
-  position: absolute;
-  column-count: 5;
-  column-gap: 40px;
-  font-size: 15px;
-  top: 40px;
-  left: 425px;
-  font-family: "TriplexSerifLight";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1vw;
+  text-decoration: none;
+}
+
+.pages a {
+  text-decoration: none;
+  padding: 3vw;
+}
+
+.banner {
+     display: grid;
+     height: 100%;
+     position: relative;
+     box-sizing: border-box;
+}
+
+.center {
+    width: 100vw;
+    border: 4vw solid;
+    box-sizing: border-box;
 }
 
 main {
-  flex-grow: 1;
+ width: 100vw;
+ height: 65vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 200px;
-  margin-bottom: 75px;
-
+.cont {
+ width: 75vw;
+ padding: 0 50px;
+ column-gap: 10vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
 }
 
-.images img {
-  height: 250px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  padding: 4px 4px 4px;
-  cursor: pointer;
-  border: 1px solid #ebebeb;
-  height: 250px;
-}
-
-.footer {
-  background-color: #ddd;
-  height: 70px;
-  width: 100%;
-  position: relative;
-}
-
-.footertext {
-  position: absolute;
-  font-size: 15px;
-  bottom: 25px;
-  right: 30px;
-  font-family: "Eurostile";
+footer {
+ width: 100vw;
+ height: 15vh;
+ background-color: pink;
 }
